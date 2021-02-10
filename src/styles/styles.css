@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: fit-content;
+    box-sizing: border-box;
+    color: var(--black);
+    font-family: Arial;
+}
+
+body {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #e8e8e8;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}

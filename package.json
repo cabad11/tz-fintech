@@ -1,0 +1,41 @@
+{
+  "name": "tz-fintech",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "webpack serve --mode development --env development --hot --port 3000",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "fuse.js": "^6.4.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-select-search": "^3.0.1",
+    "sass-rem": "^2.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.13",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/plugin-syntax-class-properties": "^7.12.13",
+    "@babel/plugin-transform-react-jsx": "^7.12.5",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "css-loader": "^5.0.1",
+    "dotenv-webpack": "^6.0.0",
+    "eslint": "^7.19.0",
+    "eslint-plugin-react": "^7.22.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.0.0",
+    "mini-css-extract-plugin": "^1.3.6",
+    "node-sass": "^5.0.0",
+    "sass": "^1.32.6",
+    "sass-loader": "^11.0.0",
+    "scss": "^0.2.4",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

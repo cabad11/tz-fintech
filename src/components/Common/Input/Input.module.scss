@@ -1,0 +1,14 @@
+@import "~sass-rem";
+
+.input {
+  height: rem(40px);
+  border-radius: 5px;
+  border: 1px solid var(--grey);
+  background-color: var(--light-grey);
+  padding-left: 1rem;
+  outline: none;
+}
+
+.disabled {
+  pointer-events: none;
+}

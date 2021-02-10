@@ -1,0 +1,42 @@
+env:
+  browser: true
+  commonjs: true
+  es2021: true
+  node: true
+extends: [ "eslint:recommended", "plugin:react/recommended" ]
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 12
+  sourceType: "module"
+rules:
+  react/prop-types: 0
+  no-mixed-spaces-and-tabs: 0
+  react/jsx-indent: [ "error", 4 ]
+  indent:
+    - error
+    - 4
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+  react/jsx-indent-props: [ "error", 4 ]
+  react/jsx-props-no-spreading: [ "warn" ]
+settings:
+  react:
+    createClass: createReactClass
+    pragma: React
+    fragment: Fragment
+    version: detect
+    flowVersion: '0.53'
+  propWrapperFunctions:
+    - forbidExtraProps
+    - property: freeze
+      object: Object
+    - property: myFavoriteWrapper
+  linkComponents:
+    - Hyperlink
+    - name: Link
+      linkAttribute: to

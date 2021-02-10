@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "syntax-dynamic-import",
+    "@babel/plugin-transform-react-jsx",
+    "@babel/plugin-syntax-class-properties",
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ]
+  ],
+  "presets": [
+    "@babel/preset-react"
+  ]
+}

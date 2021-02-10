@@ -1,0 +1,28 @@
+.exchangeIconContainer {
+  width: 16px;
+  height: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+.arrowIcon {
+  position: absolute;
+  height: 8px;
+  width: 16px;
+
+  &.rightIcon {
+    top: 0;
+  }
+
+  &.leftIcon {
+    bottom: 0;
+    transform: rotate(180deg);
+  }
+
+  svg {
+    position: absolute;
+    top: 0
+  }
+}

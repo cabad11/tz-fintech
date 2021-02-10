@@ -1,4 +1,4 @@
-import React, { useContext, useMemo, useState, useEffect } from 'react';
+import React, { useContext, useMemo, useState, useEffect, useCallback } from 'react';
 import classNames from 'classnames';
 import { ExchangeContext } from '../../contexts/ExchangeContext';
 import { ExchangeIcon } from '../../icons/ExchangeIcon';
@@ -57,6 +57,11 @@ const ExchangeForm = () => {
         }
     }, [estimatedAmountByCurrency]);
 
+    const swapCurrencies = useCallback(()=>{
+        setFirstCurrency(secondCurrency)
+        setSecondCurrency(firstCurrency)
+    },[firstCurrency,secondCurrency]);
+
     const options = useMemo(() => {
         if (typeof availableCurrencies !== 'object') return [];
         return availableCurrencies?.map(currency => {
@@ -79,7 +84,7 @@ const ExchangeForm = () => {
           </div>
           <div className={styles.exchangerContainer}>
               <CurrencyInput options={options} setCurrency={setFirstCurrency} currency={firstCurrency}/>
-              <ExchangeIcon fill="#11B3FE" className={styles.exchangeIcon}/>
+              <ExchangeIcon fill="#11B3FE" className={styles.exchangeIcon} onClick={swapCurrencies}/>
               <CurrencyInput options={options}
                              setCurrency={setSecondCurrency}
                              currency={secondCurrency}
